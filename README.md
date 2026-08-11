@@ -6,7 +6,7 @@ This project automates helmet detection using computer vision, helping identify 
 who may not be following safety protocols.
 
 ## Live Demo
-🔗 [Try the app here](YOUR_STREAMLIT_CLOUD_LINK_HERE)
+🔗 [Try the app here](https://safety-helmet-detection-hd3qqhupykur89ish2xzkj.streamlit.app/)
 
 ## Approach
 - Used YOLOv8 (Ultralytics), a fast, real-time object detection model.
@@ -14,6 +14,7 @@ who may not be following safety protocols.
 - Two classes: "With Helmet" and "Without Helmet".
 - Trained in Google Colab using a free T4 GPU, over 50 epochs.
 - Built an interactive Streamlit web app with a sidebar showing model stats and usage instructions.
+- Deployed permanently on Streamlit Community Cloud.
 
 ## Results
 
@@ -36,9 +37,9 @@ Upload any image and the app detects and labels each worker as "With Helmet" or 
 3. Run the app: `streamlit run app.py`
 
 ## Tech Stack
-Python · YOLOv8 (Ultralytics) · Roboflow · Streamlit · Google Colab
+Python · YOLOv8 (Ultralytics) · Roboflow · Streamlit · Google Colab · Streamlit Community Cloud
 
 ## Future Improvements
 - Improve recall for the "Without Helmet" class (currently 79.8%), the most safety-critical case to catch, using more training data or additional epochs.
 - Add real-time video stream detection support.
-- Deploy to a permanent hosting platform for continuous public access.
+- Address the class imbalance seen in per-class recall through targeted data augmentation.
