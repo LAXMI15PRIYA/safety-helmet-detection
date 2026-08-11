@@ -2,7 +2,7 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 
-model = YOLO("runs/detect/train/weights/best.pt")
+model = YOLO("best.pt")
 
 # --- SIDEBAR ---
 # Everything with "st.sidebar." appears on the left panel, not the main page.
